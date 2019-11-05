@@ -14,6 +14,7 @@
 		FB4FD255237114C4002C2EB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4FD253237114C4002C2EB6 /* LaunchScreen.storyboard */; };
 		FB4FD25D2371156A002C2EB6 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4FD25C2371156A002C2EB6 /* WordsTableViewController.swift */; };
 		FB4FD25F237115A1002C2EB6 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4FD25E237115A1002C2EB6 /* DefinitionViewController.swift */; };
+		FB4FD26123712903002C2EB6 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4FD26023712903002C2EB6 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FB4FD256237114C4002C2EB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB4FD25C2371156A002C2EB6 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		FB4FD25E237115A1002C2EB6 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		FB4FD26023712903002C2EB6 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				FB4FD24A237114C2002C2EB6 /* SceneDelegate.swift */,
 				FB4FD25C2371156A002C2EB6 /* WordsTableViewController.swift */,
 				FB4FD25E237115A1002C2EB6 /* DefinitionViewController.swift */,
+				FB4FD26023712903002C2EB6 /* VocabularyWord.swift */,
 				FB4FD24E237114C2002C2EB6 /* Main.storyboard */,
 				FB4FD251237114C4002C2EB6 /* Assets.xcassets */,
 				FB4FD253237114C4002C2EB6 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				FB4FD249237114C2002C2EB6 /* AppDelegate.swift in Sources */,
 				FB4FD24B237114C2002C2EB6 /* SceneDelegate.swift in Sources */,
+				FB4FD26123712903002C2EB6 /* VocabularyWord.swift in Sources */,
 				FB4FD25D2371156A002C2EB6 /* WordsTableViewController.swift in Sources */,
 				FB4FD25F237115A1002C2EB6 /* DefinitionViewController.swift in Sources */,
 			);
