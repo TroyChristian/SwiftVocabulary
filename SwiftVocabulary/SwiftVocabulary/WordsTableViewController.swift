@@ -9,7 +9,8 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
-
+    var vocabWords: [VocabularyWord] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,18 +30,19 @@ class WordsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return vocabWords.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
 
         // Configure the cell...
-
+        let word = vocabWords[indexPath.row]
+        cell.textLabel?.text = word.word 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -77,14 +79,38 @@ class WordsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(forSegue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if forSegue.identifier == "ShowDefinitionSegue"{
+            let definitionVC = forSegue.destination
+        }
+        
+        if let indexPath = tableView.indexPathForSelectedRow,
+            let definitionVC = forSegue.destination as? DefinitionViewController{
+            let word = vocabWords[indexPath.row]
+           // definitionVC.cell.text = word 
+        }
     }
-    */
+    
 
 }
+
+
+/*    // In a storyboard-based application, you will often want to do a little preparation before navigation
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+      if segue.identifier == "ShowColorDetail"{
+          // We know we are going to the color detail view controller
+          let colorDetailVC = segue.destination
+          
+          // What are we giving to the new view controller? - The color!
+          if let indexPath = tableView.indexPathForSelectedRow,
+              let colorDetailVC = segue.destination as? ColorDetailViewController{
+              let color = colors[indexPath.row]
+              colorDetailVC.cellColor = color
+               */
